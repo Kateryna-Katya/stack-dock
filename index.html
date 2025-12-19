@@ -1,56 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/stack-dock/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack-Dock — Практический ИИ для каждого</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/stack-dock/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/stack-dock/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/stack-dock/assets/styles-BMUYpd-t.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <div class="container header__container">
+            <a href="/" class="logo">
+                <span class="logo__accent">Stack</span>-Dock
+            </a>
 
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#platform" class="nav__link">Платформа</a></li>
+                    <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+                    <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Обучение</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#contact" class="btn btn--primary btn--hide-mobile">Начать сейчас</a>
+                <button class="burger" id="burger" aria-label="Меню">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <span class="hero__badge" data-aos="fade-up">Технология нового поколения</span>
+          <h1 class="hero__title" id="hero-title">AI-инструменты для реальных задач</h1>
+          <p class="hero__subtitle">Освойте решения, которые меняют правила игры. Переосмыслите подход к развитию с помощью практик, применимых уже сегодня.</p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#platform" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+      <div class="hero__visual">
+          <div class="hero__blob"></div>
+          <img src="/stack-dock/assets/one-BesBIB4n.jpg" alt="AI Interface" class="hero__img">
+      </div>
+  </div>
+</section>
+
+<section class="platform" id="platform">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">Платформа года для обычных людей</h2>
+          <p class="section-desc">Инновационная технология, которая делает ИИ понятным. Легко разобраться без опыта — подключение занимает 2 минуты.</p>
+      </div>
+      <div class="platform__grid">
+          <div class="platform__card">
+              <i data-lucide="zap" class="platform__icon"></i>
+              <h3>Быстрый старт</h3>
+              <p>Пошаговый путь, понятный каждому. Начните использовать ИИ в своей работе уже сегодня.</p>
+          </div>
+          <div class="platform__card">
+              <i data-lucide="shield-check" class="platform__icon"></i>
+              <h3>Безопасность</h3>
+              <p>Передовая цифровая инфраструктура защищает ваши данные на каждом этапе взаимодействия.</p>
+          </div>
+          <div class="platform__card">
+              <i data-lucide="trending-up" class="platform__icon"></i>
+              <h3>Стратегия роста</h3>
+              <p>Используйте технологии для пассивного дохода и автоматизации рутины.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="benefits" id="benefits">
+  <div class="container benefits__container">
+      <div class="benefits__image">
+          <img src="/stack-dock/assets/two-CH0GkwZC.jpg" alt="Benefits" class="benefits__img">
+      </div>
+      <div class="benefits__content">
+          <h2 class="section-title">Расширьте горизонты проекта</h2>
+          <ul class="benefits__list">
+              <li class="benefits__item">
+                  <strong>01. Доступ к платформе открыт</strong>
+                  <p>Предложение активно только в странах ЕС, включая Францию и Германию.</p>
+              </li>
+              <li class="benefits__item">
+                  <strong>02. Экспертная поддержка</strong>
+                  <p>Методологии, доказавшие эффективность, и поддержка на всех этапах.</p>
+              </li>
+              <li class="benefits__item">
+                  <strong>03. Воплотите мечты в реальность</strong>
+                  <p>Постройте карьеру, которая работает на вас, используя мощь нейросетей.</p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<section class="innovations" id="innovations">
+  <div class="container">
+      <h2 class="section-title text-center">Инновации в деталях</h2>
+      <div class="innovations__row">
+          <div class="innovations__item">
+              <span class="innovations__tag">NEW</span>
+              <h4>Smart Engine</h4>
+              <p>Алгоритмы нового поколения для анализа данных.</p>
+          </div>
+          <div class="innovations__item">
+              <h4>Cloud Sync</h4>
+              <p>Мгновенная синхронизация ваших настроек и ИИ-моделей.</p>
+          </div>
+          <div class="innovations__item">
+              <h4>Auto Pilot</h4>
+              <p>Автоматизация 80% повседневных цифровых задач.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <div class="container">
+      <div class="section-header">
+          <h2 class="section-title">Образовательный центр</h2>
+          <p class="section-desc">Получите больше информации о том, как нейросети меняют мир.</p>
+      </div>
+      <div class="blog__grid">
+          <article class="blog__post">
+              <div class="blog__img-wrapper"><img src="/stack-dock/assets/three-B_GbUzOK.jpg" alt="Post"></div>
+              <div class="blog__body">
+                  <time>2025-12-19</time>
+                  <h4>Как ИИ помогает в быту?</h4>
+                  <p>Практические советы по использованию чат-ботов для планирования бюджета.</p>
+                  <a href="#contact" class="blog__link">Читать далее →</a>
+              </div>
+          </article>
+          <article class="blog__post">
+              <div class="blog__img-wrapper"><img src="/stack-dock/assets/four-Cz4xmyFf.jpg" alt="Post"></div>
+              <div class="blog__body">
+                  <time>2025-12-15</time>
+                  <h4>Будущее профессий во Франции</h4>
+                  <p>Оцените перспективы проекта в условиях тотальной автоматизации.</p>
+                  <a href="#contact" class="blog__link">Читать далее →</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact__container">
+      <div class="contact__info">
+          <h2 class="section-title">Бесплатная консультация</h2>
+          <p>Запросить доступ к платформе или задать вопрос нашим экспертам во Франции. Мы ответим в течение 24 часов.</p>
+          <div class="contact__methods">
+              <div class="contact__method">
+                  <i data-lucide="mail"></i>
+                  <span>support@stack-dock.org</span>
+              </div>
+              <div class="contact__method">
+                  <i data-lucide="phone"></i>
+                  <span>+33 1 42 68 53 00</span>
+              </div>
+              <div class="contact__method">
+                  <i data-lucide="map-pin"></i>
+                  <span>42 Rue de la Paix, 75002 Paris, France</span>
+              </div>
+          </div>
+      </div>
+      <form class="contact__form" id="contactForm">
+          <div class="form__group">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form__group">
+              <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form__group">
+              <input type="tel" name="phone" id="phoneInput" placeholder="Телефон (только цифры)" required>
+          </div>
+          <div class="form__group captcha__box">
+              <label for="captcha" id="captchaLabel">Сколько будет 5 + 3?</label>
+              <input type="number" id="captchaInput" placeholder="Ответ" required>
+          </div>
+          <div class="form__group checkbox__group">
+              <input type="checkbox" id="agree" required>
+              <label for="agree">Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a></label>
+          </div>
+          <button type="submit" class="btn btn--primary w-100">Пройти регистрацию</button>
+          <div id="formMessage" class="form__message"></div>
+      </form>
+  </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+      <div class="footer__main">
+          <div class="footer__brand">
+              <a href="/" class="logo logo--footer">
+                  <span class="logo__accent">Stack</span>-Dock
+              </a>
+              <p class="footer__description">
+                  Инструменты ИИ, адаптированные для жителей Франции. Платформа года для упрощения повседневных задач.
+              </p>
+          </div>
+
+          <div class="footer__nav">
+              <h4 class="footer__title">Навигация</h4>
+              <ul class="footer__list">
+                  <li><a href="#" class="footer__link">Главная</a></li>
+                  <li><a href="#platform" class="footer__link">О платформе</a></li>
+                  <li><a href="#contact" class="footer__link">Контакты</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__contacts">
+              <h4 class="footer__title">Франция</h4>
+              <ul class="footer__list">
+                  <li><a href="tel:+33142685300" class="footer__link">+33 1 42 68 53 00</a></li>
+                  <li><a href="mailto:support@stack-dock.org" class="footer__link">support@stack-dock.org</a></li>
+                  <li><span class="footer__text">42 Rue de la Paix, 75002 Paris</span></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <div class="footer__legal">
+              <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+              <a href="cookies.html" class="footer__legal-link">Cookies</a>
+              <a href="terms.html" class="footer__legal-link">Terms of Service</a>
+              <a href="return.html" class="footer__legal-link">Return Policy</a>
+              <a href="disclaimer.html" class="footer__legal-link">Disclaimer</a>
+              <a href="personal-data-policy.html" class="footer__legal-link">Personal Data</a>
+          </div>
+          <p class="footer__copy">© 2025 Stack-Dock. Платформа уже доступна в странах ЕС.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookiePopup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      <button class="btn btn--primary btn--sm" id="acceptCookies">Принять</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
   </body>
 </html>
